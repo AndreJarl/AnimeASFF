@@ -1,9 +1,25 @@
-import React from "react"
+import React from 'react'
+import Home from './Home'
+import TopAiring from './routes/TopAiring';
+import AnimeInfo from './components/AnimeInfo';
+import RecentAnime from './routes/RecentAnime'
+import { Route, Routes } from 'react-router-dom'
+import Search from './components/Search';
+import AnimeVideo from './routes/AnimeVideo';
 
-export default function App() {
+
+function App() {
   return (
-    <h1 className="sm:bg-black text-white h-full md:bg-red-600 lg:bg-yellow-600 xl:bg-indigo-700">
-      Hello world!
-    </h1>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/topairing" element={<TopAiring />} />
+        <Route  path="/animeinfo/:infos" element={<AnimeInfo/>}/>
+        <Route  path="/recentanimes" element={<RecentAnime/>}/>
+        <Route  path="/search/:animes" element={<Search/>}/>
+        <Route  path="/anime-ep/:id" element={<AnimeVideo/>}/>
+      </Routes>
+    
   )
 }
+
+export default App
