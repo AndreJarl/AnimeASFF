@@ -51,14 +51,13 @@ function AnimeVideo() {
     return (
       <>
       <Navbar/>
-        <div style={{display: 'flex', justifyContent: 'center', marginTop: '1em', flexDirection: 'column', alignItems: 'center'}}>
+        <div className='mb-20' style={{display: 'flex', justifyContent: 'center', marginTop: '1em', flexDirection: 'column', alignItems: 'center' }}>
           {animeEP.map((ep) => (
            <>
-           <h3>{id}</h3>
+           <h3 className='text-2xl mb-4'>{id}</h3>
             <iframe
               key={ep.id} // Assuming 'id' is a unique identifier for each episode
-              width="800"
-              height="450"
+             
               src={ep.url}
               allow="autoplay; fullscreen"
             ></iframe>

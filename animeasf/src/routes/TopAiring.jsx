@@ -52,9 +52,9 @@ const TopAiring = () => {
       
       <div >
            <Navbar />
-          <h1 className='topAiring-title'>TOP AIRING ANIMES</h1>
+           <h1 className='text-5xl my-10 font-bold text-center' >TOP AIRING ANIMES</h1>
         {animes.length > 0 ? (
-           <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:grid lg:grid-cols-5 lg:gap-5'>
+            <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:grid lg:grid-cols-6 lg:mx-40 xl:mx-96 lg:content-center lg:gap-5'>
             {animes.map((anime) => (
               
               <AnimeCard key={anime.id} anime={anime} />
@@ -63,10 +63,10 @@ const TopAiring = () => {
         ) : (
           <div>No anime data available.</div>
         )}  
-        <div className='next-button'>
-      <button onClick={MinusCount}><BsArrowLeft/>PREV PAGE</button>
-      <button onClick={AddCount}>NEXT PAGE<BsArrowRight/></button>
-      </div>
+         <div className='flex justify-center items-center mx-auto my-9 gap-1'>
+          <button className='bg-gray-700 px-5 flex items-center gap-3 hover:bg-slate-500' onClick={MinusCount}> <BsArrowLeft />PREV PAGE</button>
+          <button className='bg-gray-700 px-5  flex items-center gap-3 hover:bg-slate-500' onClick={AddCount}>NEXT PAGE <BsArrowRight /></button>
+        </div>
       <Footer/>
       </div>
        

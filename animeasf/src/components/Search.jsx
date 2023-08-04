@@ -42,15 +42,15 @@ if (searchAnimes === null) {
     <>
    <Navbar/>
   { searchAnimes.length > 0 ? (
-    <div>
-      <p className='result-title'>{num} top results for {animes}....</p>
-    <div className='container' style={{marginTop: '2em'}}>
+    <div className='mb-10'>
+      <p className=' text-center font-medium my-10 text-2xl'>{num} top results for {animes}....</p>
+    <div className=' grid grid-cols-2 gap-2 mx-4   lg:grid lg:grid-cols-5 lg:justify-center lg:gap-3 lg:mx-52' style={{marginTop: '2em'}}>
         {searchAnimes.map((anime)=>(
              <AnimeCard key={anime.id} anime={anime}/>
         ))}
     </div>
     </div>): (<div style={{display: 'flex',alignItems: 'center', justifyContent: 'center', marginTop: '4em', flexDirection: 'column'}}>
-      <p style={{marginBottom: '4em'}}>No results found for {animes}</p>
+      <p className='text-center' style={{marginBottom: '4em'}}>No results found for {animes}</p>
       <img src={none} alt="" srcset="" width={500} />
     </div>)}
     <Footer/>

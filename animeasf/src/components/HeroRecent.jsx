@@ -41,7 +41,7 @@ function HeroRecent() {
               <Link to="/topairing" style={{textDecoration: 'none'}}> <button className='flex text-center content-center mt-5 bg-gray-700 px-8 py-4 mb-5 rounded lg:px-5 lg:py-2 lg:text-sm'>See More</button></Link> 
             </div>
           {animes.length > 0 ? (
-            <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:flex lg:content-center lg:gap-5'>
+            <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:flex lg:content-center lg:gap-5 mb-10'>
               {animes.map((anime) => (
                 <AnimeCardRecent key={anime.id} anime={anime} />
               ))}

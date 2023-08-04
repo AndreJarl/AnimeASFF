@@ -23,7 +23,7 @@ export default {
       '2xl': '4000px',
       // => @media (min-width: 1536px) { ... }
     }},
-   
+  
   },
   plugins: [],
 }

@@ -11,32 +11,32 @@ const  AnimeInfoPage = ({info}) => {
   console.log(info)
 
   return (
-    <div  key={info.id}>
-      <div className='info'>
-           <div className='info-img-container'>
-              <img className='info-img' src={info.image} alt="" srcset="" />
+    <div className='flex flex-col justify-center mt-10'  key={info.id}>
+      <div className='flex flex-col justify-center items-center mx-10 mt-10 lg:flex lg:flex-row lg:gap-8 '>
+           <div className='flex justify-center'>
+              <img className='w-[300px]' src={info.image} alt="" srcset="" />
            </div>
-           <div className="info-description">
-            <h1>{info.title}</h1>
-            <div className='genre'>
+           <div className="flex flex-col ">
+            <h1 className='text-2xl font-bold text-center lg:text-left'>{info.title}</h1>
+            <div className='grid grid-cols-3 gap-2 lg:gap-10 text-xs justify-center my-4 lg:flex lg:justify-start'>
              
               {info.genres.map((genre)=>{
                   return(
                     <>
-                       <div className='genre-items'>
+                       <div className=' text-gray-400 px-0 py-0text-center rounded lg:text-sm lg:bg-none'>
                         {genre}
                        </div>
                    </>   
                   )
               })}
             </div>
-            <p className='description'>{info.description}</p>
+            <p className='text-sm lg:w-[650px] text-slate-400 mb-5'>{info.description}</p>
 
-            <div className='ratings'>
-              <ul>
-                <li>{info.status}</li>
-                <li>{info.releaseDate}</li>
-                <li>{info.subOrDub}</li>
+            <div className=''>
+              <ul className='flex gap-2 text-sm text-white'>
+                <li className='bg-gray-700 px-3 rounded py-1'>{info.status}</li>
+                <li  className='bg-gray-700 px-3 rounded py-1'>{info.releaseDate}</li>
+                <li  className='bg-gray-700 px-3 rounded py-1'>{info.subOrDub}</li>
               </ul>
             </div>
            </div>

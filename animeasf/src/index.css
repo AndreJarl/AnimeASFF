@@ -14,3 +14,22 @@ body{
     padding: 0;
     font-family: Poppins;
   }
+
+  iframe{
+   width: 800px;
+   height: 450px;
+  }
+
+  @media screen and (min-width: 764px) and (max-width: 1024px){
+    iframe{
+      width: 600px;
+      height: 450px;
+     }
+  }
+
+  @media screen and (min-width: 200px) and (max-width: 764px) {
+    iframe{
+      width: 300px;
+      height: 2610px;
+     }
+  }

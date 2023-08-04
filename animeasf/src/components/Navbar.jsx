@@ -12,9 +12,8 @@ function Navbar() {
  const [animes, setAnime] = useState("");
 
 
- const Search = () =>{
+ const Search = (event) =>{
      setAnime("");
-     
  }
 
 

@@ -5,7 +5,7 @@ import { AiFillLinkedin, AiFillFacebook, AiFillGithub} from 'react-icons/ai';
 function Footer() {
   return (
     <div className=' bg-gray-600 py-5 px-10 flex flex-col content-center items-center'>
-       <div className="flex content-between items-center gap-64 mb-5 mt-4">
+       <div className="flex flex-col content-between items-center gap-3 mb-5 mt-4 lg:flex lg:flex-row lg:gap-72">
             
                 <div className="">
                   <h1 className='text-4xl font-bold'>ANIMEASF</h1>
@@ -19,7 +19,7 @@ function Footer() {
 
          </div>
          <p style={{fontSize: '13px', textAlign: 'center'}}>created by Andre Jarl 2023</p>
-         <div className='text-xs text-center mt-5 mx-40'> 
+         <div className='text-xs text-center mt-5 mx-1 lg:mx-40 '> 
                     <p>Disclaimer: The content presented on this website is intended for educational purposes only. All rights and copyrights to the original owners and creators of the materials are duly acknowledged and respected. This website does not claim ownership or endorse any unauthorized use of copyrighted content.</p>
         </div>
     </div>
