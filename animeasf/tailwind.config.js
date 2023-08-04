@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     extend: {screens: {
-      'sm': '200px',
+
+      'xs' : '200px',
+      'sm': '300px',
       // => @media (min-width: 640px) { ... }
 
       'md': '768px',

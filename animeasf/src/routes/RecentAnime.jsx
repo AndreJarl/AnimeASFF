@@ -56,7 +56,7 @@ const RecentAnime = () => {
            <Navbar />
           <h1 className='topAiring-title' >RECENT ANIMES</h1>
         {animes.length > 0 ? (
-          <div className='container'>
+            <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:flex lg:content-center lg:gap-5'>
             {animes.map((anime) => (
               
               <AnimeCardRecent key={anime.id} anime={anime} />
