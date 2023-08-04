@@ -49,7 +49,7 @@ function Navbar() {
 
                 <div className='hidden lg:flex gap-6'>
                     <h2 className='cursor-pointer text-2xl hover:text-gray-600'><BsMoonFill/></h2> 
-                    <h2 className='cursor-pointer  text-2xl hover:text-gray-600'><FaGithubAlt/></h2> 
+                    <a href="https://github.com/AndreJarl/AnimeASFF"><h2 className='cursor-pointer  text-2xl hover:text-gray-600'><FaGithubAlt/></h2></a> 
                     <h2 className='cursor-pointer  text-2xl hover:text-gray-600'><FaUserCircle/></h2> 
                 </div>
 
