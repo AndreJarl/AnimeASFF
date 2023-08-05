@@ -51,22 +51,24 @@ function AnimeVideo() {
     return (
       <>
       <Navbar/>
-        <div className='mb-5 lg:mb-20 xl:mb-20' style={{display: 'flex', justifyContent: 'center', marginTop: '1em', flexDirection: 'column', alignItems: 'center' }}>
-          {animeEP.map((ep) => (
-           <>
-           <h3 className='text-2xl mb-4 text-center'>{id}</h3>
-            <iframe
-              key={ep.id} // Assuming 'id' is a unique identifier for each episode
-              src={ep.url}
-              allow="autoplay; fullscreen"
-            ></iframe>
-        
-           </>
-          ))}
-          <p className='text-center mb-5 mt-5 font-semibold'>PRO TIP:  If ads in the video player persist, refresh the browser.</p>
-        <p  className='text-center mb-5  text-slate-400'>Apologies, but I do not possess the rights to the video content; therefore, it is inevitable that advertisements will be present.
-           A small price to pay. </p>
-        </div>
+      <div className='mt-5 mb-5 lg:mb-20 xl:mb-20' style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+  {animeEP.map((ep) => (
+    <div key={ep.id} className='flex flex-col justify-center items-center'>
+      <h3 className='text-2xl mb-4 text-center'>{id}</h3>
+      <div className= 'w-[300px] sm:w-[350px] h-[260px] flex justify-center items-center lg:w-[700px] lg:h-[400px]'>
+        <iframe
+          src={ep.url}
+          allow="autoplay; fullscreen"
+          className='w-full h-full'
+        ></iframe>
+      </div>
+    </div>
+  ))}
+  <p className='text-center mb-5 mt-5 font-semibold'>PRO TIP: If ads in the video player persist, refresh the browser.</p>
+  <p className='text-center mb-5 text-slate-400'>Apologies, but I do not possess the rights to the video content; therefore, it is inevitable that advertisements will be present. A small price to pay.</p>
+</div>
+
+
         {/* <AnimeEpisode info={info} />  */}
         
         <Footer/>
