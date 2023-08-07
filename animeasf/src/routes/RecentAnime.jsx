@@ -56,7 +56,7 @@ const RecentAnime = () => {
            <Navbar />
           <h1 className='text-5xl my-10 font-bold text-center' >RECENT ANIMES</h1>
         {animes.length > 0 ? (
-            <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:grid lg:grid-cols-6 lg:mx-40 xl:mx-96 lg:content-center lg:gap-5'>
+            <div className='grid grid-cols-2 gap-2 mx-5 content-center md:grid md:grid-cols-3 lg:grid lg:grid-cols-5 lg:mx-40 xl:mx-96 lg:content-center lg:gap-1'>
             {animes.map((anime) => (
               
               <AnimeCardRecent key={anime.id} anime={anime} />

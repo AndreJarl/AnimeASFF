@@ -10,7 +10,7 @@ import AnimeVideo from './routes/AnimeVideo';
 
 function App() {
   return (
-        <Routes>
+       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/topairing" element={<TopAiring />} />
         <Route  path="/animeinfo/:infos" element={<AnimeInfo/>}/>
