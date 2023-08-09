@@ -5,6 +5,7 @@ import HeroTopAiring from './components/HeroTopAiring'
 import TopAiring from './routes/TopAiring'
 import HeroRecent from './components/HeroRecent'
 import AnimeEpisode from './components/AnimeEpisode'
+import Hero from './components/Hero'
 
 
 
@@ -14,6 +15,7 @@ function Home() {
   return (
     <div>
     <Navbar/>
+    <Hero/>
     <HeroTopAiring/>
     <HeroRecent/>
     <Footer/>

@@ -5,22 +5,19 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AnimeEpisode from '../components/AnimeEpisode';
 
-// https://api.consumet.org/anime/gogoanime/{servers}/{episodeId}
 
 function AnimeVideo() {
 
    const [animeEP, setAnimeEP] = useState([]);
-   const [info, setInfo]  = useState({});
    
-   const {id, infos} = useParams()
+   const {id} = useParams()
 
     useEffect(()=>{
         fetchData();
-        fetchData1();
-    }, [id,infos])
+    }, [id])
 
     const url = `https://api.consumet.org/anime/gogoanime/servers/${id}`;
-    const urll = `https://api.consumet.org/anime/gogoanime/info/${infos}`;
+   
 
 
     const fetchData = async () => {
@@ -34,18 +31,7 @@ function AnimeVideo() {
      }
     };
   
-    const fetchData1 = async () => {
-      try {
-          const { dataa } = await axios.get(urll);
-          setInfo(dataa)    
-         
-      } catch (err) {
-          throw new Error(err.message);
-      }
-  };
 
-
-  console.log(urll)
   console.log(url) 
 
     return (
@@ -69,8 +55,8 @@ function AnimeVideo() {
 </div>
 
 
-        {/* <AnimeEpisode info={info} />  */}
-        
+       
+       
         <Footer/>
         </>
       );

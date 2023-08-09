@@ -23,10 +23,10 @@ function Navbar() {
 
   
   return (
-    <div className='flex flex-col content-center items-center bg-black pb-9 lg:pb-9 lg:flex-row lg:content-center lg:mx-auto lg:gap-4 lg:h-30 lg:my-auto md:flex md:flex-row md:mx-auto md:pb-0 '>
-       <div className=" flex flex-col content-center pt-8 mx-10 lg:flex-row lg:items-center lg:content-center lg:mx-auto lg:gap-10 lg:my-auto md:flex md:mx-auto">   
+    <div className=' fixed pb-9 w-full bg-black flex flex-col justify-center items-center md:flex md:flex-row md:items-center md:content-center lg:flex-row '>
+       <div className=" flex flex-col items-center justify-center md:gap-8 pt-8 mx-10 lg:flex-row lg:items-center lg:content-center lg:mx-auto lg:gap-10 lg:my-auto md:flex md:flex-row md:content-center md:items-center">   
             
-                <div className="flex content-center items-center gap-8 mb-8 lg:mb-0 lg:gap-10" >
+                <div className="flex content-center items-center gap-8 mb-8 md:mb-0 lg:mb-0 lg:gap-10" >
                 <Link to="/"  style={{textDecoration: 'none', color: 'white'}}>
                   <h1 className='text-3xl font-bold md:text-4xl lg:text-4xl'>ANIMEASF</h1></Link>
                     <ul className='hidden gap-6 font-medium sm:flex'>
@@ -54,16 +54,17 @@ function Navbar() {
                     <a href="https://github.com/AndreJarl/AnimeASFF"><h2 className='cursor-pointer  text-2xl hover:text-gray-600'><FaGithubAlt/></h2></a> 
                     <h2 onClick={future} className='cursor-pointer  text-2xl hover:text-gray-600'><FaUserCircle/></h2> 
                 </div>
-
-         </div>
-
-         <div className=' flex content-center items-center gap-4 mx-10 lg:hidden '> 
+             
+             
+         <div className=' flex content-center items-center gap-4  lg:hidden '> 
                     <input className='bg-white text-black w-40 sm:w-60 h-8 rounded py-1 px-1 ' style={{ outline: 'none'}} type="text" placeholder='search anime' value={animes}
                     onChange={(event)=> setAnime(event.target.value)}/>
                     {animes.trim() !== "" ? 
                     ( <Link to = {`/search/${animes}`} onClick={Search} ><h2 className='text-2xl bg-gray-500 px-2 py-1 rounded hover:bg-slate-800'><FcSearch /></h2></Link>)
                      : (<h2 className='text-2xl bg-gray-500 px-2 py-1 rounded hover:bg-slate-800'><FcSearch /></h2>)}
                 </div>
+         </div>
+
     </div>
   )
 }

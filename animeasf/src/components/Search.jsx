@@ -43,7 +43,7 @@ if (searchAnimes === null) {
    <Navbar/>
   { searchAnimes.length > 0 ? (
     <div className='mb-10'>
-      <p className=' text-center font-medium my-10 text-2xl'>{num} top results for {animes}....</p>
+      <p className=' text-center font-medium pt-48 pb-5 md:pt-36 lg:pt-36 lg:pb-5 text-2xl'>{num} top results for {animes}....</p>
     <div className=' grid grid-cols-2 gap-2 mx-4   lg:grid lg:grid-cols-5 lg:justify-center lg:gap-3 lg:mx-52' style={{marginTop: '2em'}}>
         {searchAnimes.map((anime)=>(
              <AnimeCard key={anime.id} anime={anime}/>
