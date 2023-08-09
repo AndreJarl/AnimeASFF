@@ -5,6 +5,8 @@ created by Andre Jarl 2023
 # PC view
 ![heroPC](https://github.com/AndreJarl/AnimeASFF/assets/104331025/a4e6a1d2-3dd7-4503-867e-d52ea1150779)
 
+![footer](https://github.com/AndreJarl/AnimeASFF/assets/104331025/101da264-e88b-4d76-926f-426aa94ae904)
+
 ![recent](https://github.com/AndreJarl/AnimeASFF/assets/104331025/8253f9e3-30cf-4be3-8ed1-0d8b2b4f8662)
 
 ![topAiring](https://github.com/AndreJarl/AnimeASFF/assets/104331025/60861701-1f75-4d8f-adf7-546cec0f33a5)
