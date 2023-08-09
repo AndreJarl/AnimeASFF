@@ -1,9 +1,7 @@
 import React , {useState, useEffect} from 'react'
 import { FcSearch } from 'react-icons/fc';
-import { BsMoonFill } from 'react-icons/BS';
 import { FaGithubAlt, FaUserCircle } from 'react-icons/fa';
 import { Link} from 'react-router-dom';
-import axios from "axios";
 
 
 
@@ -50,7 +48,6 @@ function Navbar() {
                 </div>
 
                 <div className='hidden lg:flex gap-6'>
-                    <h2  onClick={future} className='cursor-pointer text-2xl hover:text-gray-600'><BsMoonFill/></h2> 
                     <a href="https://github.com/AndreJarl/AnimeASFF"><h2 className='cursor-pointer  text-2xl hover:text-gray-600'><FaGithubAlt/></h2></a> 
                     <h2 onClick={future} className='cursor-pointer  text-2xl hover:text-gray-600'><FaUserCircle/></h2> 
                 </div>

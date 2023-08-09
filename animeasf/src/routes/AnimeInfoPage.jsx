@@ -11,7 +11,7 @@ const  AnimeInfoPage = ({info}) => {
   console.log(info)
 
   return (
-    <div className='flex flex-col justify-center mt-10'  key={info.id}>
+    <div className='flex flex-col justify-center pt-28'  key={info.id}>
       <div className='flex flex-col justify-center items-center mx-10 mt-10 lg:flex lg:flex-row lg:gap-8 '>
            <div className='flex justify-center'>
               <img className='w-[300px]' src={info.image} alt="" srcset="" />

@@ -37,7 +37,7 @@ function AnimeVideo() {
     return (
       <>
       <Navbar/>
-      <div className='mt-5 mb-5 lg:mb-20 xl:mb-20' style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+      <div className='pt-48 pb-5 lg:pt-36 lg:pb-20 xl:pb-20' style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
   {animeEP.map((ep) => (
     <div key={ep.id} className='flex flex-col justify-center items-center'>
       <h3 className='text-2xl mb-4 text-center'>{id}</h3>

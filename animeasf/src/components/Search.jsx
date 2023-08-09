@@ -49,7 +49,7 @@ if (searchAnimes === null) {
              <AnimeCard key={anime.id} anime={anime}/>
         ))}
     </div>
-    </div>): (<div style={{display: 'flex',alignItems: 'center', justifyContent: 'center', marginTop: '4em', flexDirection: 'column'}}>
+    </div>): (<div style={{display: 'flex',alignItems: 'center', justifyContent: 'center', paddingTop: '4em', flexDirection: 'column'}}>
       <p className='text-center' style={{marginBottom: '4em'}}>No results found for {animes}</p>
       <img src={none} alt="" srcset="" width={500} />
     </div>)}
