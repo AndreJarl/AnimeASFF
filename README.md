@@ -1,6 +1,9 @@
 # AnimeASFF
 AnimeASF is a streaming website using React, Tailwind and GogoAnime API.
+
 created by Andre Jarl 2023
+
+Live demo: https://animeasf.netlify.app/
 
 # PC view
 ![heroPC](https://github.com/AndreJarl/AnimeASFF/assets/104331025/a4e6a1d2-3dd7-4503-867e-d52ea1150779)
