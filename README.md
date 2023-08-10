@@ -5,6 +5,16 @@ created by Andre Jarl 2023
 
 Live demo: https://animeasf.netlify.app/
 
+#Key Features
+-Vast Anime Collection: Explore a diverse selection of anime series and movies.
+
+-User-friendly Interface: Enjoy a sleek and intuitive design that ensures a smooth and enjoyable browsing experience.
+
+-Data-driven Content: AnimeASF utilizes the GogoAnime API to provide up-to-date anime information, including posters, summaries, and genres.
+
+-Responsive Design: Access AnimeASF from any device, as the website is fully responsive and optimized for mobile, tablet, and desktop.
+
+
 # PC view
 ![heroPC](https://github.com/AndreJarl/AnimeASFF/assets/104331025/a4e6a1d2-3dd7-4503-867e-d52ea1150779)
 
