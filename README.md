@@ -6,6 +6,7 @@ created by Andre Jarl 2023
 Live demo: https://animeasf.netlify.app/
 
 #Key Features
+
 -Vast Anime Collection: Explore a diverse selection of anime series and movies.
 
 -User-friendly Interface: Enjoy a sleek and intuitive design that ensures a smooth and enjoyable browsing experience.
