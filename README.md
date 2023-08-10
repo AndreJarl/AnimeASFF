@@ -7,13 +7,13 @@ Live demo: https://animeasf.netlify.app/
 
 # Key Features
 
--Vast Anime Collection: Explore a diverse selection of anime series and movies.
+**-Vast Anime Collection**: Explore a diverse selection of anime series and movies.
 
--User-friendly Interface: Enjoy a sleek and intuitive design that ensures a smooth and enjoyable browsing experience.
+**-User-friendly Interface**: Enjoy a sleek and intuitive design that ensures a smooth and enjoyable browsing experience.
 
--Data-driven Content: AnimeASF utilizes the GogoAnime API to provide up-to-date anime information, including posters, summaries, and genres.
+**-Data-driven Content**: AnimeASF utilizes the GogoAnime API to provide up-to-date anime information, including posters, summaries, and genres.
 
--Responsive Design: Access AnimeASF from any device, as the website is fully responsive and optimized for mobile, tablet, and desktop.
+**-Responsive Design**: Access AnimeASF from any device, as the website is fully responsive and optimized for mobile, tablet, and desktop.
 
 
 # PC view
